@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Обьекты</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        var instance = {
+            propertyA: 232,
+            propertyB: 666
+        };
+        document.write("<p>instance.propertyA = " + instance.propertyA);
+        document.write("<p>instance.propertyB = " + instance.propertyB);
+        document.write("<hr/>");
+        instance.propertyA = 125;
+        instance["propertyB"] = 578;
+        document.write("<p>instance.propertyA = " + instance.propertyA);
+        document.write("<p>instance.propertyB = " + instance.propertyB);
+        document.write("<hr/>");
+        document.write("<p>instance = " + instance);
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
