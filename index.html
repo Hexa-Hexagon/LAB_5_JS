@@ -13,16 +13,15 @@
             basement: "<img src= Images_LR7/Basement.gif'/><br/>",
             address: "<p style='color:green'>UK. London. Muswell Hill. N10<hr/>"
         };
-        document.write(house.roof);
-        if ("thirdFloor" in house) {
-            document.write(house["thirdFloor"]);
-        } else {
-            document.write(house["secondFloor"]);
+        if ("roof" in house) {
+            delete house.roof;
         }
-        document.write(house.secondFloor);
-        document.write(house.firstFloor);
-        document.write(house.basement);
-        document.write(house.adress);
+        if ("secondFloor" in house) {
+            delete house.secondFloor;
+        }
+        for (element in house) {
+            document.write(house[element]);
+        }
     </script>
 </head>
 
