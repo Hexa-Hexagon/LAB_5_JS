@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конструктор Object</title>
-    <script>
-        let point = new Object();
-        point.x = 16;
-        point.y = 33;
-        point.f = function() {
-            document.write(`<p>x = ${point.x}<p> y = ${point.y}`);
-        }
-        point.f();
+    <title>Массивы в JavaScript</title>
+    <script type="text/javascript">
+        let person = {
+            firstName: "Jim",
+            lastName: "Rainbow",
+            age: 30,
+            occupation: "Web Developer"
+        };
+        document.write(`<p>${person.firstName} ${person.lastName}`);
+        person.age = 25;
+        document.write(`<p>Age: ${person.age} years old.`);
     </script>
 </head>
 
