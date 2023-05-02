@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вложенные обьекты</title>
     <script type="text/javascript">
-        let builder = new Object();
-        builder.createRoot = function() {
-            document.write(`<img src='./roof.jpg' /> <br/>`);
+        let house = {
+            roof: "<img src= Images_LR7/Roof.gif'/><br/>",
+            secondFloor: "<img src= Images_LR7/SecondFloor.gif'/><br/>",
+            firstFloor: "<img src='Images_LR7/FirstFloor.gif'/><br/>",
+            basement: "<img src= Images_LR7/Basement.gif'/><br/>",
+            address: "<p style='color:green'>UK. London. Muswell Hill. N10<hr/>"
+        };
+        for (let element in house) {
+            document.write(house[element]);
         }
-        builder.createFirstFloor = function() {
-            document.write(`<img src='./firstFloor.jpg' /> <br/>`);
+        let arr = [];
+        let _ind = 0;
+        arr[0] = true;
+        arr[4] = 1;
+        arr[122] = "people";
+        for (_ind in arr) {
+            arr[3] = false;
+            console.log(_ind);
         }
-        builder.createSecondFloor = function() {
-            document.write(`<img src='./secondFloor.jpg' /> <br/>`);
-        }
-        builder.createBasement = function() {
-            document.write(`<img src='./basement.jpg' /> <br/>`);
-        }
-        builder.createRoof();
-        builder.createSecondFloor();
-        builder.createFirstFloor();
-        builder.createBasement();
+        console.log(arr);
     </script>
 </head>
 
