@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Массивы в JavaScript</title>
     <script type="text/javascript">
-        let person = {
-            firstName: "Jim",
-            lastName: "Rainbow",
-            age: 30,
-            occupation: "Web Developer",
-            skill: "JavaScript"
+        let human = {
+            firstName: "Alex",
+            secondName: "Jazun",
+            age: 27,
+            occupation: {
+                company: "ZIEIT",
+                position: "Teacher"
+            },
+            occupation1: {
+                company: "Microsoft",
+                position: "Web Developer"
+            }
         };
-        document.write(`<p>${person.firstName} ${person.lastName}`);
-        person.age = 25;
-        document.write(`<p>Age: ${person.age} years old.`);
-        document.write(`<p>Skill: ${person.skill}.`);
+        document.write("<p>First name: " + human.firstName);
+        document.write("<p>Second name: " + human.secondName);
+        document.write("<p>Age: " + human.age + " years old");
+        document.write("<p>Company: " + human.occupation.company);
+        document.write("<p>Position: " + human.occupation.position);
+        document.write("<p>Company: " + human.occupation1.company);
+        document.write("<p>Position: " + human.occupation1.position);
     </script>
 </head>
 
